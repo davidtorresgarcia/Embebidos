@@ -20,6 +20,3 @@ do_install() {
 	install -d ${D}${bindir}
 	install -m 0755 Avance1 ${D}${bindir}
 }
-
-FILES_${PN} = "/init ${sysconfdir}/rc.local.sample"
-RCONFLICTS_${PN} = "systemd"
